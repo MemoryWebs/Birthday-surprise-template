@@ -407,6 +407,9 @@ function showEnding(){
 function closePopup(){
   popup.style.display="none";
 }
-
-popup.addEventListener("click", e=>{
-  if(e.targ
+  popup.addEventListener("click", e => {
+  if (e.target === popup) {
+    closePopup();
+  }
+});
+  
