@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happiest Birthday My Love💖</title>
+<title>Happiest Birthday My Love 🥹💖</title>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
@@ -215,7 +215,7 @@ video{
 </div>
 
 <div class="screen hidden" id="birthdayScreen">
-  <h1>Happiest Birthday My Love 💖</h1>
+  <h1>Happiest Birthday Cutieeeeee 🥹💖</h1>
   <p>You are my safe place 🧿✨</p>
   <button id="surpriseBtn">A little surprise just for you 💝</button>
 </div>
@@ -227,7 +227,7 @@ video{
 <div id="loveEnding">I love you so much babyy ❤️</div>
 
 <script>
-const targetTime = new Date(2026, 1, 4, 0, 0, 0).getTime();
+const targetTime = new Date(2026, 1, 4, 10, 10, 0).getTime();
 
 const countdownEl = document.getElementById("countdown");
 const countdownScreen = document.getElementById("countdownScreen");
@@ -331,7 +331,7 @@ function showMessage(){
   popupContent.innerHTML=`
     <button class="back-btn" onclick="openChoices()">⬅ Back</button>
     <div class="message">
-My love🥹❤️<br><br>
+My love 🥹❤️<br><br>
 From the very first moment, I knew you were my forever.  
 Every little thing you do — your laugh, your silly jokes, the way you care without a word —  
 stays in my heart and makes life so much brighter 🧿✨<br><br>
@@ -353,7 +353,7 @@ function showMemories(){
     <h2>Our Little Forever 💞</h2>
     <div class="memories">
       <div class="memory">
-        <img src="Image1.jpg">
+        <img src="image1.jpg">
         <p class="caption">The moment our forever quietly began 💫❤️</p>
       </div>
       <div class="memory">
@@ -407,9 +407,13 @@ function showEnding(){
 function closePopup(){
   popup.style.display="none";
 }
-  popup.addEventListener("click", e => {
-  if (e.target === popup) {
-    closePopup();
-  }
+
+popup.addEventListener("click", e=>{
+  if(e.target===popup) closePopup();
 });
-  
+
+surpriseBtn.addEventListener("click", openChoices);
+</script>
+
+</body>
+  </html>
